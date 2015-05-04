@@ -1,8 +1,14 @@
 /* global angular */
-angular.module('waletzkoPortfolio', [])
-.controller('MainCtrl', [
-  '$scope',
-  function($scope) {
-    $scope.test = 'Hello world!';
-  }
-]);
+angular.module('waletzkoPortfolio', [
+  'ui.router', 
+  'templates',
+  'waletzkoPortfolio.home'
+])
+  .config(function ($stateProvider, $urlRouterProvider) {
+    $stateProvider
+      .state('app', {
+          abstract: true
+      });
+    
+    $urlRouterProvider.otherwise('/home');
+  });
