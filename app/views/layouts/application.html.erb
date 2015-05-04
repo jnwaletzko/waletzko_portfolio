@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WaletzkoPortfolio</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <title>Waletzko Portfolio</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
+<body ng-app="waletzkoPortfolio" ng-controller="MainCtrl">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      {{test}}
+      <ui-view></ui-view>
+    </div>
+  </div>
 
 </body>
 </html>
