@@ -15,18 +15,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'src/vendor/bower_components/angular/angular.min.js',
-      'src/vendor/bower_components/angular-mocks/angular-mocks.js',
-      'src/vendor/bower_components/angular-ui-router/release/angular-ui-router.min.js',
-      'src/assets/js/unit-test-helpers.js',
-      'src/app/**/*.html',
-      'src/app/**/*.spec.js',
-      'src/app/**/*.js'
-    ],
-
-
-    // list of files to exclude
-    exclude: [
+      'vendor/assets/bower_components/angular/angular.js',
+      'vendor/assets/bower_components/angular-mocks/angular-mocks.js',
+      'vendor/assets/bower_components/angular-ui-router/release/angular-ui-router.js',
+      'vendor/assets/javascripts/unit-tests-helper.js',
+      'test/mocks/stateMock.js',
+      'app/assets/javascripts/**/*.html',
+      'app/assets/javascripts/**/*.spec.js',
+      'app/assets/javascripts/**/*.js'
     ],
 
   	/*********************************************************/
@@ -38,13 +34,17 @@ module.exports = function(config) {
 
       // setting this option will create only a single module that contains templates
       // from all the files, so you can load them all with module('foo')
-      moduleName: 'myAppTemplates'
+      moduleName: 'templates'
     },
+
+    // list of files to exclude
+    exclude: [
+    ],
     
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'src/app/**/*.html': ['ng-html2js']
+      'app/assets/javascripts/**/*.html': ['ng-html2js']
     },
 
 

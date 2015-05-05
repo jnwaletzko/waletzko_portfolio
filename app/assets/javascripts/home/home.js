@@ -14,6 +14,6 @@ angular.module('waletzkoPortfolio.home', [
   .controller('HomeCtrl', function () {
     var home = this;
     home.title = 'Home Page';
-    home.body = 'This is the about home body';   
+    home.body = 'This is the home body';   
   })
 ;
