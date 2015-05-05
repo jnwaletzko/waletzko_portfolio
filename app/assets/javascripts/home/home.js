@@ -6,7 +6,7 @@ angular.module('waletzkoPortfolio.home', [
     $stateProvider
       .state('home', {
         url: '/home',
-        templateUrl: 'home/_home.html',
+        templateUrl: 'app/assets/javascripts/home/_home.html',
         controller: 'HomeCtrl as home'
       })
     ;
