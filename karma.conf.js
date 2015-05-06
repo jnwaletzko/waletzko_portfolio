@@ -29,7 +29,7 @@ module.exports = function(config) {
     // Note: this was added AFTER karma init was completed.
     /*********************************************************/
     ngHtml2JsPreprocessor: {
-      stripPrefix: 'src/',
+      stripPrefix: 'app/assets/javascripts/',
       //stripSufix: '.ext',
 
       // setting this option will create only a single module that contains templates
