@@ -19,9 +19,8 @@ module.exports = function(config) {
       'vendor/assets/bower_components/angular-mocks/angular-mocks.js',
       'vendor/assets/bower_components/angular-ui-router/release/angular-ui-router.js',
       'vendor/assets/javascripts/unit-tests-helper.js',
-      'test/mocks/stateMock.js',
+      'test/assets/javascripts/**/*.spec.js',      
       'app/assets/javascripts/**/*.html',
-      'app/assets/javascripts/**/*.spec.js',
       'app/assets/javascripts/**/*.js'
     ],
 
