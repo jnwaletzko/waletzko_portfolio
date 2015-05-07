@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/jnwaletzko/waletzko_portfolio/issues"
   },
-  "homepage": "https://github.com/jnwaletzko/waletzko_portfolio"
+  "homepage": "https://github.com/jnwaletzko/waletzko_portfolio",
+  "scripts": {
+   "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
+  }
 }
