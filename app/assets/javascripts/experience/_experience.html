@@ -1,2 +1,10 @@
-<h1>{{experience.title}}</h1>
-<p>{{experience.body}}</p>
+<h1>{{experienceCtrl.title}}</h1>
+<p>{{experienceCtrl.body}}</p>
+
+<div ng-repeat="experience in experienceCtrl.experiences">
+  <div class="row"><h3>{{experience.company}} - {{experience.title}}</h3>
+    <p>{{experience.description}}</p>
+    <p>{{experience.about}}</p> 
+    <p>{{experience.startdate}} - {{experience.enddate}}</p>
+  </div>
+</div>
