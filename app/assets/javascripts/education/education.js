@@ -7,13 +7,13 @@ angular.module('waletzkoPortfolio.education', [
       .state('education', {
         url: '/education',
         templateUrl: 'education/_education.html',
-        controller: 'EducationCtrl as education'
+        controller: 'EducationCtrl as educationCtrl'
       })
     ;
   })
   .controller('EducationCtrl', function () {
-    var education = this;
-    education.title = 'My Education';
-    education.body = 'This is what I\'ve learned';   
+    var educationCtrl = this;
+    educationCtrl.title = 'My Education';
+    educationCtrl.body = 'This is what I\'ve learned';   
   })
 ;

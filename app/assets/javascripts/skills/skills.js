@@ -7,13 +7,13 @@ angular.module('waletzkoPortfolio.skills', [
       .state('skills', {
         url: '/skills',
         templateUrl: 'skills/_skills.html',
-        controller: 'SkillsCtrl as skills'
+        controller: 'SkillsCtrl as skillsCtrl'
       })
     ;
   })
   .controller('SkillsCtrl', function () {
-    var skills = this;
-    skills.title = 'My Skills';
-    skills.body = 'These are my skills.';   
+    var skillsCtrl = this;
+    skillsCtrl.title = 'My Skills';
+    skillsCtrl.body = 'These are my skills.';   
   })
 ;
