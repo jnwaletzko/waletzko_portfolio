@@ -21,9 +21,10 @@ angular.module('waletzkoPortfolio.skills', [
       {"name":"Rails","level":"4"},
       {"name":"SQL","level":"6"},
       {"name":"Javascript","level":"5"},
+      {"name":"WPF","level":"4"},
       {"name":"Java","level":"3"}
     ];
-    
+
     skillsCtrl.title = 'My Skills';
     skillsCtrl.body = 'These are my skills.';
   })
