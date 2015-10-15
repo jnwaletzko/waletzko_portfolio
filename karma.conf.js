@@ -18,8 +18,9 @@ module.exports = function(config) {
       'vendor/assets/bower_components/angular/angular.js',
       'vendor/assets/bower_components/angular-mocks/angular-mocks.js',
       'vendor/assets/bower_components/angular-ui-router/release/angular-ui-router.js',
+      'vendor/assets/bower_components/jquery/dist/jquery.js'
       'vendor/assets/javascripts/unit-tests-helper.js',
-      'test/assets/javascripts/**/*.spec.js',      
+      'test/assets/javascripts/**/*.spec.js',
       'app/assets/javascripts/**/*.html',
       'app/assets/javascripts/**/*.js'
     ],
@@ -39,7 +40,7 @@ module.exports = function(config) {
     // list of files to exclude
     exclude: [
     ],
-    
+
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
