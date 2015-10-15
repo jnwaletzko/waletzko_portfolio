@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/jnwaletzko/waletzko_portfolio",
   "scripts": {
-   "test": "./node_modules/karma/bin/karma start --browsers Chrome --single-run"
+   "test": "./node_modules/karma/bin/karma start --browsers Firefox --single-run"
   }
 }
