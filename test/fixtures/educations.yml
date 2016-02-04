@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  location: MyString
-  description: MyString
+college:
+  title: Bachelor of Arts
+  location: Saint John's University
+  description: College Education
 
-two:
-  title: MyString
-  location: MyString
-  description: MyString
+high_school:
+  title: High School Diploma
+  location: Lakeville North High School
+  description: High School Education
