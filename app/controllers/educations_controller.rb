@@ -1,9 +1,11 @@
 class EducationsController < ApplicationController
   protect_from_forgery with: :exception
+  before_action :find_education, only: %w[show update]
 
   respond_to :json
   def index
-    respond_with Education.all
+    @educations = Education.all
+    respond_with @educations
   end
 
   def create
@@ -11,11 +13,18 @@ class EducationsController < ApplicationController
   end
 
   def show
-    respond_with Education.find(params[:id])
+    respond_with @education
   end
 
-  private
-  def post_params
+  def update
+    respond_with @education.update(post_params)
+  end
+
+  private def find_education
+    @education = Education.find(params[:id])
+  end
+
+  private def post_params
     params.require(:education).permit(:title, :location, :description)
   end
 end
