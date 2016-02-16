@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 college:
+  id: 1
   title: Bachelor of Arts
   location: Saint John's University
   description: College Education
 
 high_school:
+  id: 2
   title: High School Diploma
   location: Lakeville North High School
   description: High School Education
