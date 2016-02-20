@@ -29,6 +29,8 @@ gem 'responders', '~> 2.0'
 
 gem 'sprockets', '2.12.3'
 
+gem 'factory_girl_rails'
+
 # Access an IRB console on exception pages or by using <%= console %> in views
 gem 'web-console', '~> 2.0', group: :development
 
@@ -42,6 +44,11 @@ gem 'web-console', '~> 2.0', group: :development
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'spring-commands-rspec'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'rb-fsevent' if `uname` =~ /Darwin/
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
