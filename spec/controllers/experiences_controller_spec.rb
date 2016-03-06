@@ -28,7 +28,7 @@ describe ExperiencesController do
 
   describe 'create' do
     context "with valid attributes" do
-      it "creates a new education" do
+      it "creates a new experience" do
         expect {
           post :create, experience: attributes_for(:experience), :format => :json
         }.to change(Experience, :count).by(1)

@@ -56,4 +56,5 @@ Rails.application.routes.draw do
   root to: 'application#angular'
   resources :experiences
   resources :educations
+  resources :skills
 end
