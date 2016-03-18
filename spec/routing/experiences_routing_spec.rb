@@ -16,7 +16,7 @@ describe ExperiencesController do
     end
 
     it "routes to #update" do
-      expect(put: => "/experiences/1").to route_to("experiences#update", id: "1")
+      expect(put: "/experiences/1").to route_to("experiences#update", id: "1")
     end
 
   end
