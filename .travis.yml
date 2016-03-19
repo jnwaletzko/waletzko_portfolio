@@ -4,7 +4,9 @@ rvm:
 # uncomment this line if your project needs to run something other than `rake`:
 before_script:
   - npm install karma
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
 script:
   - bundle exec rspec spec
-  - karma start --single-run
+  - karma start --single-run --browsers Firefox
 bundler_args: --without darwin
