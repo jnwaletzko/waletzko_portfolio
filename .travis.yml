@@ -1,6 +1,8 @@
-language: node_js
-node_js:
-  - "0.12.7"
+language: ruby
+rvm:
+  - 2.2.0
 before_script:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
+  - npm install karma
+script:
+  - RAILS_ENV=test bundle exec rake --trace db:migrate test
+  - karma start --single-run --browsers PhantomJS test/karma/config/unit.js
