@@ -6,5 +6,5 @@ before_script:
   - npm install karma
 script:
   - bundle exec rspec spec
-  - karma start --single-run --browsers Firefox
+  - karma start --single-run
 bundler_args: --without darwin
