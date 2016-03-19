@@ -1,8 +1,6 @@
 language: ruby
 rvm:
-  - 2.2.0
-before_script:
-  - npm install karma
-script:
-  - RAILS_ENV=test bundle exec rake --trace db:migrate test
-  - karma start --single-run --browsers PhantomJS test/karma/config/unit.js
+ - "2.2.0"
+ - rbx
+# uncomment this line if your project needs to run something other than `rake`:
+script: bundle exec rspec spec
