@@ -8,8 +8,7 @@ angular.module('waletzkoPortfolio.skills', [
         url: '/skills',
         templateUrl: 'skills/_skills.html',
         controller: 'SkillsCtrl as skillsCtrl'
-      })
-    ;
+      });
   })
   .controller('SkillsCtrl', function (Skills) {
     var skillsCtrl = this;
@@ -20,7 +19,6 @@ angular.module('waletzkoPortfolio.skills', [
       .then(function(result){
         skillsCtrl.skills = result.data;
       });
-
   })
   .service('Skills', function($http) {
     var service = this;
@@ -28,5 +26,4 @@ angular.module('waletzkoPortfolio.skills', [
     service.getSkills = function() {
         return $http.get('/skills.json');
     };
-  })
-;
+  });
