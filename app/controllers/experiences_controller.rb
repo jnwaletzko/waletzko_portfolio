@@ -1,7 +1,7 @@
 class ExperiencesController < ApplicationController
   protect_from_forgery with: :exception
   before_action :find_experience, only: [:show, :update]
-  # skip_before_action :verify_authenticity_token
+  skip_before_action :verify_authenticity_token
 
   respond_to :json
   def index
