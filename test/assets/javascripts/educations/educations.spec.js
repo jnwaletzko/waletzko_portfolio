@@ -1,37 +1,37 @@
-describe('Unit: Education', function() {
+describe('Unit: Educations', function() {
   var ctrl;
-  
+
   beforeEach(module('templates'));
-  beforeEach(module('waletzkoPortfolio.education'));
-  beforeEach(module('ui.router'));  
-  
+  beforeEach(module('waletzkoPortfolio.educations'));
+  beforeEach(module('ui.router'));
+
   beforeEach(inject(function ($controller) {
-    ctrl = $controller('EducationCtrl', {});
+    ctrl = $controller('EducationsCtrl', {});
   }));
-  
-  describe('Education Route', function() {
+
+  describe('Educations Route', function() {
     var $state,
         $rootScope,
-        state = 'education';
-        
+        state = 'educations';
+
     beforeEach(inject(function (_$state_, $templateCache, _$rootScope_) {
       $state = _$state_;
       $rootScope = _$rootScope_;
-      $templateCache.put('education/_education.html', '');
+      $templateCache.put('educations/_educations.html', '');
     }));
-    
+
     it('should respond to URL', function () {
-      expect($state.href(state)).toEqual('#/education');
+      expect($state.href(state)).toEqual('#/educations');
     });
-    
+
     it('should activate the state', function () {
       $state.go(state);
       $rootScope.$digest();
       expect($state.current.name).toBe(state);
     });
   });
-  
-  describe('EducationCtrl', function () {
+
+  describe('EducationsCtrl', function () {
     it('should have title defined', function () {
         expect(ctrl.title).toBeDefined();
     });

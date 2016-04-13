@@ -4,7 +4,7 @@ angular.module('waletzkoPortfolio', [
   'waletzkoPortfolio.home',
   'waletzkoPortfolio.experiences',
   'waletzkoPortfolio.skills',
-  'waletzkoPortfolio.education'
+  'waletzkoPortfolio.educations'
 ])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
