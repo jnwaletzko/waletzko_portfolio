@@ -5,8 +5,18 @@ describe('Unit: Educations', function() {
   beforeEach(module('waletzkoPortfolio.educations'));
   beforeEach(module('ui.router'));
 
-  beforeEach(inject(function ($controller) {
-    ctrl = $controller('EducationsCtrl', {});
+  beforeEach(inject(function ($controller, _Educations_, $q) {
+    educations = _Educations_;
+
+    spyOn(educations, 'getEducations').and.callFake(
+      function () {
+        var deferred = $q.defer();
+        deferred.resolve({data: []});
+        return deferred.promise;
+      }
+    );
+
+    ctrl = $controller('EducationsCtrl', {Experiences: educations});
   }));
 
   describe('Educations Route', function() {

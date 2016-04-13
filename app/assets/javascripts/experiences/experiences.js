@@ -24,6 +24,6 @@ angular.module('waletzkoPortfolio.experiences', [
     var service = this;
 
     service.getExperiences = function() {
-        return $http.get('/experiences.json');
+      return $http.get('/experiences.json');
     };
   });
