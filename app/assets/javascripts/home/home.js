@@ -14,6 +14,10 @@ angular.module('waletzkoPortfolio.home', [
   .controller('HomeCtrl', function () {
     var homeCtrl = this;
     homeCtrl.title = 'Jake Waletzko';
-    homeCtrl.body = 'Hi my name is jake, I\'m a software engineer/web designer';   
+    homeCtrl.body = 'Hi, my name is Jake. I\'m a software engineer. I enjoy working on the back-end service side of applications, but I work on some front-end work when I get the chance. ';
+    homeCtrl.work = "I work for Sport Ngin.";
+    homeCtrl.live = "Living in Minneapolis.";
+    homeCtrl.school = "St. John's University Graduate";
+
   })
 ;
