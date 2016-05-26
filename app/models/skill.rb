@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: skills
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  level      :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 # {"name":"C#","level":"7"},
 # {"name":"VB.Net","level":"6"},
 # {"name":"Ruby","level":"4"},

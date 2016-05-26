@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: experiences
+#
+#  id          :integer          not null, primary key
+#  title       :string
+#  company     :string
+#  about       :string
+#  description :string
+#  start_date  :datetime
+#  end_date    :datetime
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
 # {"title":"Software Engineer", "company":"Sport Ngin", "about":"At Sport Ngin, we build applications and services to help the heroes of today spend less time on the administrative activities of their organization and more time teaching the qualities of Sport to their athletes. They are our future leaders, doctors, firemen, policewomen, teachers, fathers, mothers and friends.", "description":"I am a full stack ruby on rails developer working on the content management team", "startdate":"12/1/2014", "enddate":"present"},
 # {"title":"Software Developer", "company":"C.H. Robinson", "about":"While our tradition of leadership began with our produce and truckload services, we've evolved into an industry-leading 3PL with a comprehensive portfolio of sourcing, transportation, and logistics services. The ongoing challenges of the supply chain industry inspire us to innovate and search for new ideas that challenge limits and extend Beyond Brokerage. Our customers, contract carriers, and suppliers are the beneficiaries of this forward-thinking approach, because we believe they deserve nothing but the best from their 3PL. We are not content to simply meet their expectations—we are committed to exceeding them every single day", "description":"Develop enhancements to global shipping software in an Agile environment. Architect and develop new web service, allowing company internal clients to have cleaner and more organized retrieval of system data. Leadership of implementing new practices, such as unit tests, automatic build, and code reviews resulting in much improved code quality throughout the team. Work in close collaboration with team members, project managers, architects, and business  representatives to better understand development solutions. Research and develop a prototype to explore technology options for future projects.", "startdate":"5/20/2012", "enddate":"11/15/2014"},
 # {"title":"Developer/Analyst Intern", "company":"C.H. Robinson", "about":"While our tradition of leadership began with our produce and truckload services, we've evolved into an industry-leading 3PL with a comprehensive portfolio of sourcing, transportation, and logistics services. The ongoing challenges of the supply chain industry inspire us to innovate and search for new ideas that challenge limits and extend Beyond Brokerage. Our customers, contract carriers, and suppliers are the beneficiaries of this forward-thinking approach, because we believe they deserve nothing but the best from their 3PL. We are not content to simply meet their expectations—we are committed to exceeding them every single day", "description":"Develop enhancements to global shipping software in an Agile environment. Architect and develop new web service, allowing company internal clients to have cleaner and more organized retrieval of system data. Leadership of implementing new practices, such as unit tests, automatic build, and code reviews resulting in much improved code quality throughout the team. Work in close collaboration with team members, project managers, architects, and business  representatives to better understand development solutions. Research and develop a prototype to explore technology options for future projects.", "startdate":"5/20/2011", "enddate":"8/15/2011"},
