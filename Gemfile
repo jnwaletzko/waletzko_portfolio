@@ -44,6 +44,7 @@ gem 'web-console', '~> 2.0', group: :development
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'annotate'
   gem 'spring-commands-rspec'
   gem 'rspec-rails'
   gem 'guard-rspec'

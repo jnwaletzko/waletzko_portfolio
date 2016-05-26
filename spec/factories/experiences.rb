@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: experiences
+#
+#  id          :integer          not null, primary key
+#  title       :string
+#  company     :string
+#  about       :string
+#  description :string
+#  start_date  :datetime
+#  end_date    :datetime
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
 FactoryGirl.define do
   factory :experience do
     title "MyString"
