@@ -1,0 +1,29 @@
+{
+  "name": "waletzko_portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "karma.conf.js",
+  "dependencies": {
+    "karma": "^0.12.31",
+    "karma-jasmine": "^0.3.5",
+    "karma-chrome-launcher": "^0.1.8",
+    "jasmine-core": "^2.3.0",
+    "g": "^2.0.0",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
+    "karma-cli": "^0.0.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jnwaletzko/waletzko_portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnwaletzko/waletzko_portfolio/issues"
+  },
+  "homepage": "https://github.com/jnwaletzko/waletzko_portfolio",
+  "scripts": {
+   "test": "./node_modules/karma/bin/karma start --browsers Firefox --single-run"
+  }
+}

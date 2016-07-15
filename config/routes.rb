@@ -54,4 +54,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   root to: 'application#angular'
+  resources :experiences
+  resources :educations
+  resources :skills
 end

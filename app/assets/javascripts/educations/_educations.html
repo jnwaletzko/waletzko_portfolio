@@ -1,0 +1,8 @@
+<h1>{{educationsCtrl.title}}</h1>
+<p>{{educationsCtrl.body}}</p>
+
+<div ng-repeat="education in educationsCtrl.educations">
+  <div class="row"><h3>{{education.title}} - {{education.location}}</h3>
+    <p>{{education.description}}</p>
+  </div>
+</div>
