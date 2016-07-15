@@ -1,16 +1,16 @@
 /* global angular */
 angular.module('waletzkoPortfolio', [
-  'ui.router', 
+  'ui.router',
   'waletzkoPortfolio.home',
-  'waletzkoPortfolio.experience',
+  'waletzkoPortfolio.experiences',
   'waletzkoPortfolio.skills',
-  'waletzkoPortfolio.education'
+  'waletzkoPortfolio.educations'
 ])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('app', {
           abstract: true
       });
-    
+
     $urlRouterProvider.otherwise('/home');
   });

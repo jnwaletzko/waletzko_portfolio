@@ -1,14 +1,14 @@
-describe('Unit: Skills', function() {
-  var ctrl, skills;
+describe('Unit: Experiences', function() {
+  var ctrl, experiences;
 
   beforeEach(module('templates'));
-  beforeEach(module('waletzkoPortfolio.skills'));
+  beforeEach(module('waletzkoPortfolio.experiences'));
   beforeEach(module('ui.router'));
 
-  beforeEach(inject(function ($controller, _Skills_, $q) {
-    skills = _Skills_;
+  beforeEach(inject(function ($controller, _Experiences_, $q) {
+    experiences = _Experiences_;
 
-    spyOn(skills, 'getSkills').and.callFake(
+    spyOn(experiences, 'getExperiences').and.callFake(
       function () {
         var deferred = $q.defer();
         deferred.resolve({data: []});
@@ -16,22 +16,22 @@ describe('Unit: Skills', function() {
       }
     );
 
-    ctrl = $controller('SkillsCtrl', {Skills: skills});
+    ctrl = $controller('ExperiencesCtrl', {Experiences: experiences});
   }));
 
-  describe('Skills Route', function() {
+  describe('Experience Route', function() {
     var $state,
         $rootScope,
-        state = 'skills';
+        state = 'experiences';
 
     beforeEach(inject(function (_$state_, $templateCache, _$rootScope_) {
       $state = _$state_;
       $rootScope = _$rootScope_;
-      $templateCache.put('skills/_skills.html', '');
+      $templateCache.put('experiences/_experiences.html', '');
     }));
 
     it('should respond to URL', function () {
-      expect($state.href(state)).toEqual('#/skills');
+      expect($state.href(state)).toEqual('#/experiences');
     });
 
     it('should activate the state', function () {
@@ -41,7 +41,7 @@ describe('Unit: Skills', function() {
     });
   });
 
-  describe('SkillsCtrl', function () {
+  describe('ExperiencesCtrl', function () {
     it('should have title defined', function () {
         expect(ctrl.title).toBeDefined();
     });

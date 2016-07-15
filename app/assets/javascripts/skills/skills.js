@@ -8,24 +8,22 @@ angular.module('waletzkoPortfolio.skills', [
         url: '/skills',
         templateUrl: 'skills/_skills.html',
         controller: 'SkillsCtrl as skillsCtrl'
-      })
-    ;
+      });
   })
-  .controller('SkillsCtrl', function () {
+  .controller('SkillsCtrl', function (Skills) {
     var skillsCtrl = this;
-
-    skillsCtrl.skills = [
-      {"name":"C#","level":"7"},
-      {"name":"VB.Net","level":"6"},
-      {"name":"Ruby","level":"4"},
-      {"name":"Rails","level":"4"},
-      {"name":"SQL","level":"6"},
-      {"name":"Javascript","level":"5"},
-      {"name":"WPF","level":"4"},
-      {"name":"Java","level":"3"}
-    ];
-
     skillsCtrl.title = 'My Skills';
     skillsCtrl.body = 'These are my skills.';
+
+    Skills.getSkills()
+      .then(function(result){
+        skillsCtrl.skills = result.data;
+      });
   })
-;
+  .service('Skills', function($http) {
+    var service = this;
+
+    service.getSkills = function() {
+        return $http.get('/skills.json');
+    };
+  });
